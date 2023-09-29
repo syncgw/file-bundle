@@ -1,6 +1,6 @@
 {
 	"name" : "syncgw/activesync-bundle",
-	"description" : "sync•gw ActiveSync exchange protocol bundle.",
+	"description" : "sync•gw ActiveSync Exchange protocol bundle.",
 	"license" : "LGPL-3.0-or-later",
 	"homepage" : "https://github.com/syncgw/file-bundle",
 	"authors" : [{
