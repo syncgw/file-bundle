@@ -7,6 +7,7 @@
 **sync•gw** is the one and only fully portable server software available providing synchronization service between nearly any mobile device and your web server.
 
 ## ActiveSync bundle for sync•gw ##
+Protocoll bundle were used to handle the comunication with your device. 
 The included files enables support for [MicroSoft ActiveSync](http://en.wikipedia.org/wiki/Exchange_ActiveSync). 
 
 ## Installation ##
