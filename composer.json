@@ -2,6 +2,11 @@
 	"name" : "syncgw/activesync-bundle",
 	"description" : "sync•gw ActiveSync Exchange protocol bundle.",
 	"license" : "LGPL-3.0-or-later",
+    "repositories" : [{
+            "type" : "composer",
+            "url" : "https://repo.packagist.org"
+    	}
+    ],
 	"homepage" : "https://github.com/syncgw/file-bundle",
 	"authors" : [{
 			"name" : "Florian Daeumling",
@@ -25,6 +30,6 @@
 	"support" : {
 		"issues" : "https://github.com/syncgw/syncgw/issues",
 		"source" : "https://github.com/syncgw/activesync-bundle",
-		"docs" : "https://github.com/syncgw/doc-bundle"
+		"docs" : "https://github.com/syncgw/activesync-bundle"
 	}
 }

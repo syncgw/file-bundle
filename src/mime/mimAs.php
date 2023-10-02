@@ -41,14 +41,14 @@ class mimAs extends XML {
 	 * 	Collect information about class
 	 *
 	 * 	@param 	- Object to store information
-     *	@param 	- true = Provide status information only (if available)
-	 */
-	public function getInfo(XML &$xml, bool $status): void {
+ 	 */
+	public function getInfo(XML &$xml): void {
 
-		$xml->addVar('Opt', 'ActiveSync base handler');
+		foreach ($this->_mime as $mime) {
 
-		foreach ($this->_mime as $mime)
-			$xml->addVar('Opt', sprintf('MIME type handler "%s %s"'), $mime[0], $mime[1] ? sprintf('%.1F', $mime[1]) : '');
+			$xml->addVar('Opt', sprintf('MIME type handler "%s"', $mime[0]));
+			$xml->addVar('Stat', $mime[1] ? sprintf('%.1F', $mime[1]) : '');
+		}
 	}
 
 	/**

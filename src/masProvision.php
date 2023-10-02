@@ -68,12 +68,12 @@ class masProvision extends XML {
 	 * 	Collect information about class
 	 *
 	 * 	@param 	- Object to store information
-     *	@param 	- true = Provide status information only (if available)
-	 */
-	public function getInfo(XML &$xml, bool $status): void {
+  	 */
+	public function getInfo(XML &$xml): void {
 
-		$xml->addVar('Opt', '<a href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-asprov" target="_blank">[MS-ASPROV]</a> '.
-				      'Exchange ActiveSync: Provisioning handler');
+		$xml->addVar('Opt', '<a href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-asprov" '.
+					 'target="_blank">[MS-ASPROV]</a>Exchange ActiveSync: Provisioning handler');
+		$xml->addVar('Stat', '21.1');
 
 		$xml->addVar('Opt', 'Exchange ActiveSync server policy version');
 		parent::getVar('Policy');

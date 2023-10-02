@@ -55,12 +55,12 @@ class masHTTP extends HTTP {
 	 * 	Collect information about class
 	 *
 	 * 	@param 	- Object to store information
-     *	@param 	- true = Provide status information only (if available)
 	 */
-	public function getInfo(XML &$xml, bool $status): void {
+	public function getInfo(XML &$xml): void {
 
-		$xml->addVar('Opt', '<a href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ashttp" target="_blank">[MS-ASHTTP]</a> '.
-				      'Exchange ActiveSync: HTTP Protocol handler v22.0');
+		$xml->addVar('Opt', '<a href="https://learn.microsoft.com/en-us/openspecs/exchange_server_protocols/ms-ashttp" '.
+					'target="_blank">[MS-ASHTTP]</a> Exchange ActiveSync: HTTP Protocol handler');
+		$xml->addVar('Stat', 'v22.0');
 	}
 
 	/**

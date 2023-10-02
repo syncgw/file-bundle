@@ -159,13 +159,13 @@ class masHandler extends XML {
 	 * 	Collect information about class
 	 *
 	 * 	@param 	- Object to store information
-     *	@param 	- true = Provide status information only (if available)
 	 */
-	public function getInfo(XML &$xml, bool $status): void {
+	public function getInfo(XML &$xml): void {
 
 		$xml->addVar('Name', 'ActiveSync handler');
 
-		Server::getInstance()->getSupInfo($xml, $status, 'activesync', [ 'masStatus', 'masFolderType' ]);
+		Server::getInstance()->getBundleInfo($xml, 'activesync-bundle/src', 'activesync',
+				[ 'mime', 'masStatus', 'masFolderType' ]);
 	}
 
 	/**
