@@ -14,7 +14,6 @@ namespace syncgw\interface\file;
 
 use syncgw\lib\Config;
 use syncgw\lib\DataStore;
-use syncgw\lib\XML;
 use syncgw\interface\DBAdmin;
 use syncgw\gui\guiHandler;
 
@@ -39,18 +38,7 @@ class Admin implements DBAdmin {
 		return self::$_obj;
 	}
 
-    /**
-	 * 	Collect information about class
-	 *
-	 * 	@param 	- Object to store information
-     *	@param 	- true = Provide status information only (if available)
-	 */
-	public function getInfo(XML &$xml, bool $status): void {
-
-		$xml->addVar('Opt', 'File administration handler');
-	}
-
-    /**
+     /**
 	 * 	Show/get installation parameter
 	 */
 	public function getParms(): void {
